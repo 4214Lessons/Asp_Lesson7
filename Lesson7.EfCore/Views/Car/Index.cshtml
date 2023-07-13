@@ -1,0 +1,14 @@
+﻿@model List<Car>
+
+@foreach (var car in Model)
+{
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">@car.Vendor</h5>
+            <h6 class="card-subtitle mb-2 text-muted">@car.Model</h6>
+            <p class="card-text">@car.Number</p>
+            <a href="#" class="card-link">Card link</a>
+            <a asp-action="Delete" asp-route-id="@car.Id" class="card-link">delete</a>
+        </div>
+    </div>
+}

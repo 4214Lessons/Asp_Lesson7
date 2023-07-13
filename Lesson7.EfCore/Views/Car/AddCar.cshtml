@@ -1,0 +1,7 @@
+﻿@model Car
+<form asp-controller="Car" asp-action="AddCar" method="post">
+    <input asp-for="@Model.Vendor" />
+    <input asp-for="@Model.Model" />
+    <input asp-for="@Model.Number" />
+    <button class="btn btn-primary" type="submit">Add</button>
+</form>
